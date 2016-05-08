@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3080D9D1CDF70010083E2F3 /* RFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3080D9C1CDF70010083E2F3 /* RFAlertView.m */; };
 		E315DD471CDED46500433F5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD461CDED46500433F5C /* main.m */; };
 		E315DD4A1CDED46500433F5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD491CDED46500433F5C /* AppDelegate.m */; };
 		E315DD4D1CDED46500433F5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD4C1CDED46500433F5C /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3080D9B1CDF70010083E2F3 /* RFAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAlertView.h; sourceTree = "<group>"; };
+		E3080D9C1CDF70010083E2F3 /* RFAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAlertView.m; sourceTree = "<group>"; };
 		E315DD411CDED46500433F5C /* RFPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E315DD451CDED46500433F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E315DD461CDED46500433F5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 				E38C39B21CDEDD0000181A24 /* RFActivityDetailViewController.m */,
 				E38C39B41CDEE7A800181A24 /* RFActivityDetailCouponCell.h */,
 				E38C39B51CDEE7A800181A24 /* RFActivityDetailCouponCell.m */,
+				E3080D9B1CDF70010083E2F3 /* RFAlertView.h */,
+				E3080D9C1CDF70010083E2F3 /* RFAlertView.m */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				E315DD8C1CDED55C00433F5C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E38C39B61CDEE7A800181A24 /* RFActivityDetailCouponCell.m in Sources */,
 				E315DD8A1CDED55C00433F5C /* MASViewConstraint.m in Sources */,
+				E3080D9D1CDF70010083E2F3 /* RFAlertView.m in Sources */,
 				E38C39B31CDEDD0000181A24 /* RFActivityDetailViewController.m in Sources */,
 				E315DD851CDED55C00433F5C /* MASCompositeConstraint.m in Sources */,
 				E315DD8B1CDED55C00433F5C /* NSArray+MASAdditions.m in Sources */,

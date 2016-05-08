@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "RFActivityDetailViewController.h"
+#import "RFAlertView.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
@@ -20,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title=@"入口";
-    self.dataSource=@[@"活动详情"];
+    self.dataSource=@[@"活动详情",@"Alert"];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
@@ -58,6 +59,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
         case 0:
         {
@@ -65,7 +67,19 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            RFAlertView *alert=[[RFAlertView alloc] initWithTitle:@"领取成功" message:@"您已成功领取优惠券，请在有效期内尽快使用。" cancelButtonTitle:@"返回" okButtonTitle:@"查看卡券"];
+            alert.handleActionBlock=^(BOOL cancel){
+                if (cancel) {
+                    RFLog(@"cancel");
+                } else {
+                    RFLog(@"ok");
+                }
+            };
+            [alert showInView:self.navigationController.view];
+        }
+            break;
         default:
             break;
     }
