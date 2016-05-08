@@ -1,0 +1,69 @@
+//
+//  PrefixHeader.pch
+//  RFPractice
+//
+//  Created by Zhou Weiou on 16-5-8.
+//  Copyright (c) 2016年 Zhou Weiou. All rights reserved.
+//
+
+#ifndef RFPractice_PrefixHeader_pch
+#define RFPractice_PrefixHeader_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import "Masonry.h"
+#endif
+
+/** 颜色*/
+#define RFRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RFRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define RFRGB16Color(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+/** 输出*/
+#if DEBUG
+#define RFLog(fmt,...) NSLog((@"%s [Line %d] " fmt),__PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define RFLog(fmt, ...)
+#endif
+
+/** 获取硬件信息*/
+#define RFSCREEN_W [UIScreen mainScreen].bounds.size.width
+#define RFSCREEN_H [UIScreen mainScreen].bounds.size.height
+#define RFTabbar_H 64
+#define RFCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define RFCurrentSystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define RFiPhone4_OR_4s    (RFSCREEN_H == 480)
+#define RFiPhone5_OR_5c_OR_5s   (RFSCREEN_H == 568)
+#define RFiPhone6_OR_6s   (RFSCREEN_H == 667)
+#define RFiPhone6Plus_OR_6sPlus   (RFSCREEN_H == 736)
+#define RFiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+/** 弱指针*/
+#define RFWeakSelf(o)  __weak typeof(o) weakSelf = o;
+
+// 公共设置字号与色值
+#define Font_Small           [UIFont systemFontOfSize:(12)]
+#define Font_Standard        [UIFont systemFontOfSize:(14)]
+#define Font_Big             [UIFont systemFontOfSize:(16)]
+#define Font_A3              [UIFont systemFontOfSize:(18)]
+#define Font_A2              [UIFont systemFontOfSize:(20)]
+#define Font_A1              [UIFont systemFontOfSize:(22)]
+
+// 颜色
+#define Color_Main         RFRGB16Color(0xd3a863) // 主色调/icon色值 RGB(211,168,99)
+#define Color_Title        RFRGB16Color(0x464646) // 标题/栏目主题色值
+#define Color_Content      RFRGB16Color(0x646464) // 内容色值
+#define Color_Desc         RFRGB16Color(0x959595) // 说明/内容/不可选
+#define Color_Bg           RFRGB16Color(0xf3f3f3) // 内页背影色
+
+#define Color_Border       [UIColor colorWithHexString:@"e5e5e5"] // 边框
+#define Color_White        RFRGBColor(255,255,255) // 白色
+
+// 边距
+#define Margin_LR   12 // left right 左右距离View边缘距离
+#define Margin_UD   10 // up down 上下距离
+
+#endif
