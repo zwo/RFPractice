@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "RFActivityDetailViewController.h"
 #import "RFAlertView.h"
+#import "LayoutViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
@@ -21,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title=@"入口";
-    self.dataSource=@[@"活动详情",@"Alert"];
+    self.dataSource=@[@"活动详情",@"Alert",@"Layout"];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
@@ -78,6 +79,12 @@
                 }
             };
             [alert showInView:self.navigationController.view];
+        }
+            break;
+        case 2:
+        {
+            LayoutViewController *vc=[LayoutViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         default:

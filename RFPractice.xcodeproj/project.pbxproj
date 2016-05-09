@@ -27,6 +27,7 @@
 		E315DD8E1CDED55C00433F5C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD841CDED55C00433F5C /* ViewController+MASAdditions.m */; };
 		E38C39B31CDEDD0000181A24 /* RFActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C39B21CDEDD0000181A24 /* RFActivityDetailViewController.m */; };
 		E38C39B61CDEE7A800181A24 /* RFActivityDetailCouponCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C39B51CDEE7A800181A24 /* RFActivityDetailCouponCell.m */; };
+		E3FFB8B41CE0C42400A0B0A4 /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FFB8B31CE0C42400A0B0A4 /* LayoutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		E38C39B21CDEDD0000181A24 /* RFActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFActivityDetailViewController.m; sourceTree = "<group>"; };
 		E38C39B41CDEE7A800181A24 /* RFActivityDetailCouponCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFActivityDetailCouponCell.h; sourceTree = "<group>"; };
 		E38C39B51CDEE7A800181A24 /* RFActivityDetailCouponCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFActivityDetailCouponCell.m; sourceTree = "<group>"; };
+		E3FFB8B21CE0C42400A0B0A4 /* LayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
+		E3FFB8B31CE0C42400A0B0A4 /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 		E315DD431CDED46500433F5C /* RFPractice */ = {
 			isa = PBXGroup;
 			children = (
+				E3FFB8B11CE0C3FD00A0B0A4 /* Misc */,
 				E38C39B01CDEDAE400181A24 /* Activity */,
 				E315DD6A1CDED53F00433F5C /* Vendor */,
 				E315DD481CDED46500433F5C /* AppDelegate.h */,
@@ -218,6 +222,15 @@
 				E3080D9C1CDF70010083E2F3 /* RFAlertView.m */,
 			);
 			path = Activity;
+			sourceTree = "<group>";
+		};
+		E3FFB8B11CE0C3FD00A0B0A4 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				E3FFB8B21CE0C42400A0B0A4 /* LayoutViewController.h */,
+				E3FFB8B31CE0C42400A0B0A4 /* LayoutViewController.m */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +341,7 @@
 				E315DD851CDED55C00433F5C /* MASCompositeConstraint.m in Sources */,
 				E315DD8B1CDED55C00433F5C /* NSArray+MASAdditions.m in Sources */,
 				E315DD4D1CDED46500433F5C /* ViewController.m in Sources */,
+				E3FFB8B41CE0C42400A0B0A4 /* LayoutViewController.m in Sources */,
 				E315DD4A1CDED46500433F5C /* AppDelegate.m in Sources */,
 				E315DD881CDED55C00433F5C /* MASLayoutConstraint.m in Sources */,
 				E315DD471CDED46500433F5C /* main.m in Sources */,
