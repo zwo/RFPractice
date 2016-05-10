@@ -27,10 +27,7 @@
         [_leftButton addTarget:self action:@selector(onSegmentButton:) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:_leftButton];
-        [_leftButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.equalTo(self);
-            make.centerX.equalTo(self.mas_right).multipliedBy(0.25);
-        }];
+        _leftButton.frame=CGRectMake(0.0, 0.0, CGRectGetWidth(frame)/2, CGRectGetHeight(frame));
         
         _rightButton=[UIButton buttonWithType:UIButtonTypeCustom];
         _rightButton.titleLabel.font=Font_Big;
@@ -40,10 +37,7 @@
         [_rightButton addTarget:self action:@selector(onSegmentButton:) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:_rightButton];
-        [_rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.equalTo(self);
-            make.centerX.equalTo(self.mas_right).multipliedBy(0.75);
-        }];
+        _rightButton.frame=CGRectMake(CGRectGetWidth(frame)/2, 0.0, CGRectGetWidth(frame)/2, CGRectGetHeight(frame));
         
     }
     return self;
