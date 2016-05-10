@@ -7,6 +7,7 @@
 //
 
 #import "LayoutViewController.h"
+#import "RFHomeSegmentedControl.h"
 
 @interface LayoutViewController ()
 
@@ -33,6 +34,9 @@
         make.centerX.equalTo(container.mas_right).multipliedBy(0.6);
         make.size.mas_equalTo(CGSizeMake(40, 40));
     }];
+    
+    RFHomeSegmentedControl *segment=[[RFHomeSegmentedControl alloc] initWithFrame:CGRectMake(0, 300, 300, 40) leftTitle:@"10:00 即将开抢" rightTitle:@"全部房源"];
+    [self.view addSubview:segment];
 }
 
 - (void)didReceiveMemoryWarning {
