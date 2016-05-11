@@ -10,6 +10,7 @@
 #import "RFActivityDetailViewController.h"
 #import "RFAlertView.h"
 #import "LayoutViewController.h"
+#import "RFTermsAlertView.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
@@ -70,7 +71,7 @@
             break;
         case 1:
         {
-            RFAlertView *alert=[[RFAlertView alloc] initWithTitle:@"领取成功" message:@"您已成功领取优惠券，请在有效期内尽快使用。" cancelButtonTitle:@"返回" okButtonTitle:@"查看卡券"];
+            RFTermsAlertView *alert=[[RFTermsAlertView alloc] initWithTerms:@"鉴于Android的进程内存限制，捕获的图片不要超过1024*1024，建议为640*640以下；同时，宽和高必须为4的倍数。"];
             alert.handleActionBlock=^(BOOL cancel){
                 if (cancel) {
                     RFLog(@"cancel");
