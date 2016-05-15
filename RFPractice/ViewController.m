@@ -10,6 +10,7 @@
 #import "RFActivityDetailViewController.h"
 #import "RFAlertView.h"
 #import "LayoutViewController.h"
+#import "RFDepositOrderDetailViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title=@"入口";
-    self.dataSource=@[@"活动详情",@"Alert",@"Layout"];
+    self.dataSource=@[@"活动详情",@"Alert",@"Layout",@"订单详情"];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
@@ -84,6 +85,12 @@
         case 2:
         {
             LayoutViewController *vc=[LayoutViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 3:
+        {
+            RFDepositOrderDetailViewController *vc=[RFDepositOrderDetailViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
