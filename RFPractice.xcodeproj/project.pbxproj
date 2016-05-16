@@ -11,6 +11,7 @@
 		E31497731CE1DBA80065D6B6 /* RFHomeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E31497721CE1DBA80065D6B6 /* RFHomeSegmentedControl.m */; };
 		E31497791CE2C6C20065D6B6 /* RFTermsAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31497781CE2C6C20065D6B6 /* RFTermsAlertView.m */; };
 		E314977D1CE2CAB60065D6B6 /* CTCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = E314977C1CE2CAB60065D6B6 /* CTCheckbox.m */; };
+		E31497811CE2FF910065D6B6 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = E31497801CE2FF910065D6B6 /* NSString+Size.m */; };
 		E315DD471CDED46500433F5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD461CDED46500433F5C /* main.m */; };
 		E315DD4A1CDED46500433F5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD491CDED46500433F5C /* AppDelegate.m */; };
 		E315DD4D1CDED46500433F5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD4C1CDED46500433F5C /* ViewController.m */; };
@@ -52,6 +53,8 @@
 		E31497781CE2C6C20065D6B6 /* RFTermsAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTermsAlertView.m; sourceTree = "<group>"; };
 		E314977B1CE2CAB60065D6B6 /* CTCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCheckbox.h; sourceTree = "<group>"; };
 		E314977C1CE2CAB60065D6B6 /* CTCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCheckbox.m; sourceTree = "<group>"; };
+		E314977F1CE2FF910065D6B6 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		E31497801CE2FF910065D6B6 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		E315DD411CDED46500433F5C /* RFPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E315DD451CDED46500433F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E315DD461CDED46500433F5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,6 +129,15 @@
 			path = CTCheckbox;
 			sourceTree = "<group>";
 		};
+		E314977E1CE2FF6C0065D6B6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E314977F1CE2FF910065D6B6 /* NSString+Size.h */,
+				E31497801CE2FF910065D6B6 /* NSString+Size.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		E315DD381CDED46500433F5C = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 		E315DD431CDED46500433F5C /* RFPractice */ = {
 			isa = PBXGroup;
 			children = (
+				E314977E1CE2FF6C0065D6B6 /* Category */,
 				E3FFB8B11CE0C3FD00A0B0A4 /* Misc */,
 				E38C39B01CDEDAE400181A24 /* Activity */,
 				E315DD6A1CDED53F00433F5C /* Vendor */,
@@ -360,6 +373,7 @@
 				E38C39B61CDEE7A800181A24 /* RFActivityDetailCouponCell.m in Sources */,
 				E315DD8A1CDED55C00433F5C /* MASViewConstraint.m in Sources */,
 				E3080D9D1CDF70010083E2F3 /* RFAlertView.m in Sources */,
+				E31497811CE2FF910065D6B6 /* NSString+Size.m in Sources */,
 				E38C39B31CDEDD0000181A24 /* RFActivityDetailViewController.m in Sources */,
 				E315DD851CDED55C00433F5C /* MASCompositeConstraint.m in Sources */,
 				E315DD8B1CDED55C00433F5C /* NSArray+MASAdditions.m in Sources */,

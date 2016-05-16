@@ -8,6 +8,7 @@
 
 #import "RFTermsAlertView.h"
 #import "CTCheckbox.h"
+#import "NSString+Size.h"
 
 @interface RFTermsAlertView ()
 @property (nonatomic,copy) NSString *terms;
@@ -66,18 +67,26 @@
         make.left.right.equalTo(containerView);
     }];
     
-    UITextView *textView=[UITextView new];
-    textView.text=self.terms;
-    textView.textColor=Color_Desc;
-    textView.font=Font_Big;
+    UIScrollView *scrollView=[[UIScrollView alloc] initWithFrame:CGRectMake(12, 60, 256, 225)];
+    [containerView addSubview:scrollView];
+    UILabel *textLabel=[UILabel new];
+    textLabel.numberOfLines=0;
+    textLabel.textColor=Color_Desc;
+    textLabel.font=Font_Big;
+    textLabel.text=self.terms;
     
-    [containerView addSubview:textView];
-    [textView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(decorLine.mas_bottom).offset(8);
-        make.left.equalTo(containerView).offset(12);
-        make.right.equalTo(containerView).offset(-12);
-        make.height.mas_equalTo(225);
-    }];
+    CGSize textSize=[self.terms sizeMakeWithFont:Font_Big maxW:256];
+    textLabel.frame=CGRectMake(0, 0, 256, textSize.height+2);
+    [scrollView addSubview:textLabel];
+    scrollView.contentSize=CGSizeMake(256, textSize.height+2);
+    
+//    UITextView *textView=[[UITextView alloc] initWithFrame:CGRectMake(12, 60, 256, 225)];
+//    textView.editable=NO;
+//    textView.textColor=Color_Desc;
+//    textView.font=Font_Big;
+//    textView.text=self.terms;
+//    
+//    [containerView addSubview:textView];
     
     self.checkbox=[[CTCheckbox alloc] initWithFrame:CGRectMake(12, 294, 200, 16)];
     [containerView addSubview:self.checkbox];
