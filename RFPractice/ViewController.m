@@ -88,6 +88,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 3:
+        {
+            RFDepositOrderDetailViewController *vc=[RFDepositOrderDetailViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }

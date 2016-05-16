@@ -29,6 +29,7 @@
 		E315DD8C1CDED55C00433F5C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD7F1CDED55C00433F5C /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		E315DD8D1CDED55C00433F5C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD811CDED55C00433F5C /* View+MASAdditions.m */; };
 		E315DD8E1CDED55C00433F5C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E315DD841CDED55C00433F5C /* ViewController+MASAdditions.m */; };
+		E33949361CE80F71007F6471 /* RFDepositOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33949351CE80F71007F6471 /* RFDepositOrderDetailViewController.m */; };
 		E38C39B31CDEDD0000181A24 /* RFActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C39B21CDEDD0000181A24 /* RFActivityDetailViewController.m */; };
 		E38C39B61CDEE7A800181A24 /* RFActivityDetailCouponCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C39B51CDEE7A800181A24 /* RFActivityDetailCouponCell.m */; };
 		E3FFB8B41CE0C42400A0B0A4 /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FFB8B31CE0C42400A0B0A4 /* LayoutViewController.m */; };
@@ -94,6 +95,8 @@
 		E315DD831CDED55C00433F5C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		E315DD841CDED55C00433F5C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		E315DD8F1CDED5C900433F5C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E33949341CE80F71007F6471 /* RFDepositOrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDepositOrderDetailViewController.h; sourceTree = "<group>"; };
+		E33949351CE80F71007F6471 /* RFDepositOrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDepositOrderDetailViewController.m; sourceTree = "<group>"; };
 		E38C39B11CDEDD0000181A24 /* RFActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFActivityDetailViewController.h; sourceTree = "<group>"; };
 		E38C39B21CDEDD0000181A24 /* RFActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFActivityDetailViewController.m; sourceTree = "<group>"; };
 		E38C39B41CDEE7A800181A24 /* RFActivityDetailCouponCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFActivityDetailCouponCell.h; sourceTree = "<group>"; };
@@ -241,6 +244,15 @@
 				E315DD841CDED55C00433F5C /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		E33949331CE80F3E007F6471 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				E33949341CE80F71007F6471 /* RFDepositOrderDetailViewController.h */,
+				E33949351CE80F71007F6471 /* RFDepositOrderDetailViewController.m */,
+			);
+			path = Pay;
 			sourceTree = "<group>";
 		};
 		E38C39B01CDEDAE400181A24 /* Activity */ = {
