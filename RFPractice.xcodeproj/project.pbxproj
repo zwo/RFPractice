@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41CCE191CEC0FB100469547 /* RFCountdownCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41CCE181CEC0FB100469547 /* RFCountdownCellViewController.m */; };
+		C41CCE1D1CEC168900469547 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C41CCE1C1CEC168900469547 /* GCDMulticastDelegate.m */; };
+		C41CCE201CEC16CA00469547 /* RFHomeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C41CCE1F1CEC16CA00469547 /* RFHomeTimer.m */; };
+		C41CCE231CEC1B3500469547 /* RFCountDownTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C41CCE221CEC1B3500469547 /* RFCountDownTableViewCell.m */; };
 		E3080D9D1CDF70010083E2F3 /* RFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3080D9C1CDF70010083E2F3 /* RFAlertView.m */; };
 		E31497731CE1DBA80065D6B6 /* RFHomeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E31497721CE1DBA80065D6B6 /* RFHomeSegmentedControl.m */; };
 		E31497791CE2C6C20065D6B6 /* RFTermsAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31497781CE2C6C20065D6B6 /* RFTermsAlertView.m */; };
@@ -46,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C41CCE171CEC0FB100469547 /* RFCountdownCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCountdownCellViewController.h; sourceTree = "<group>"; };
+		C41CCE181CEC0FB100469547 /* RFCountdownCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCountdownCellViewController.m; sourceTree = "<group>"; };
+		C41CCE1B1CEC168900469547 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
+		C41CCE1C1CEC168900469547 /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		C41CCE1E1CEC16CA00469547 /* RFHomeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFHomeTimer.h; sourceTree = "<group>"; };
+		C41CCE1F1CEC16CA00469547 /* RFHomeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFHomeTimer.m; sourceTree = "<group>"; };
+		C41CCE211CEC1B3500469547 /* RFCountDownTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCountDownTableViewCell.h; sourceTree = "<group>"; };
+		C41CCE221CEC1B3500469547 /* RFCountDownTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCountDownTableViewCell.m; sourceTree = "<group>"; };
 		E3080D9B1CDF70010083E2F3 /* RFAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAlertView.h; sourceTree = "<group>"; };
 		E3080D9C1CDF70010083E2F3 /* RFAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAlertView.m; sourceTree = "<group>"; };
 		E31497711CE1DBA80065D6B6 /* RFHomeSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFHomeSegmentedControl.h; sourceTree = "<group>"; };
@@ -123,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C41CCE1A1CEC168900469547 /* MulticastDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C41CCE1B1CEC168900469547 /* GCDMulticastDelegate.h */,
+				C41CCE1C1CEC168900469547 /* GCDMulticastDelegate.m */,
+			);
+			path = MulticastDelegate;
+			sourceTree = "<group>";
+		};
 		E314977A1CE2CAB60065D6B6 /* CTCheckbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				E314977E1CE2FF6C0065D6B6 /* Category */,
+				E33949331CE80F3E007F6471 /* Pay */,
 				E3FFB8B11CE0C3FD00A0B0A4 /* Misc */,
 				E38C39B01CDEDAE400181A24 /* Activity */,
 				E315DD6A1CDED53F00433F5C /* Vendor */,
@@ -208,6 +230,7 @@
 		E315DD6A1CDED53F00433F5C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				C41CCE1A1CEC168900469547 /* MulticastDelegate */,
 				E314977A1CE2CAB60065D6B6 /* CTCheckbox */,
 				E315DD6B1CDED55C00433F5C /* Masonry */,
 			);
@@ -251,6 +274,12 @@
 			children = (
 				E33949341CE80F71007F6471 /* RFDepositOrderDetailViewController.h */,
 				E33949351CE80F71007F6471 /* RFDepositOrderDetailViewController.m */,
+				C41CCE171CEC0FB100469547 /* RFCountdownCellViewController.h */,
+				C41CCE181CEC0FB100469547 /* RFCountdownCellViewController.m */,
+				C41CCE1E1CEC16CA00469547 /* RFHomeTimer.h */,
+				C41CCE1F1CEC16CA00469547 /* RFHomeTimer.m */,
+				C41CCE211CEC1B3500469547 /* RFCountDownTableViewCell.h */,
+				C41CCE221CEC1B3500469547 /* RFCountDownTableViewCell.m */,
 			);
 			path = Pay;
 			sourceTree = "<group>";
@@ -386,17 +415,22 @@
 				E315DD8A1CDED55C00433F5C /* MASViewConstraint.m in Sources */,
 				E3080D9D1CDF70010083E2F3 /* RFAlertView.m in Sources */,
 				E31497811CE2FF910065D6B6 /* NSString+Size.m in Sources */,
+				E33949361CE80F71007F6471 /* RFDepositOrderDetailViewController.m in Sources */,
 				E38C39B31CDEDD0000181A24 /* RFActivityDetailViewController.m in Sources */,
 				E315DD851CDED55C00433F5C /* MASCompositeConstraint.m in Sources */,
 				E315DD8B1CDED55C00433F5C /* NSArray+MASAdditions.m in Sources */,
 				E31497791CE2C6C20065D6B6 /* RFTermsAlertView.m in Sources */,
+				C41CCE201CEC16CA00469547 /* RFHomeTimer.m in Sources */,
 				E31497731CE1DBA80065D6B6 /* RFHomeSegmentedControl.m in Sources */,
 				E315DD4D1CDED46500433F5C /* ViewController.m in Sources */,
 				E3FFB8B41CE0C42400A0B0A4 /* LayoutViewController.m in Sources */,
 				E315DD4A1CDED46500433F5C /* AppDelegate.m in Sources */,
 				E315DD881CDED55C00433F5C /* MASLayoutConstraint.m in Sources */,
 				E315DD471CDED46500433F5C /* main.m in Sources */,
+				C41CCE1D1CEC168900469547 /* GCDMulticastDelegate.m in Sources */,
 				E315DD8E1CDED55C00433F5C /* ViewController+MASAdditions.m in Sources */,
+				C41CCE231CEC1B3500469547 /* RFCountDownTableViewCell.m in Sources */,
+				C41CCE191CEC0FB100469547 /* RFCountdownCellViewController.m in Sources */,
 				E315DD8D1CDED55C00433F5C /* View+MASAdditions.m in Sources */,
 				E315DD891CDED55C00433F5C /* MASViewAttribute.m in Sources */,
 				E314977D1CE2CAB60065D6B6 /* CTCheckbox.m in Sources */,

@@ -11,6 +11,8 @@
 #import "RFAlertView.h"
 #import "LayoutViewController.h"
 #import "RFTermsAlertView.h"
+#import "RFDepositOrderDetailViewController.h"
+#import "RFCountdownCellViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
@@ -22,8 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.title=@"入口";    
-    self.dataSource=@[@"活动详情",@"Alert",@"Layout"];
+    self.title=@"入口";
+    self.dataSource=@[@"活动详情",@"Alert",@"Layout",@"订单详情",@"countdown"];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
@@ -91,6 +93,12 @@
         case 3:
         {
             RFDepositOrderDetailViewController *vc=[RFDepositOrderDetailViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            RFCountdownCellViewController *vc=[RFCountdownCellViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
