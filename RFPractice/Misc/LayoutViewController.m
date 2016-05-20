@@ -37,21 +37,41 @@
     
     RFHomeSegmentedControl *segment=[[RFHomeSegmentedControl alloc] initWithFrame:CGRectMake(0, 300, 300, 40) leftTitle:@"10:00 即将开抢" rightTitle:@"全部房源"];
     [self.view addSubview:segment];
+    
+    UIImageView *imageView=[[UIImageView alloc] initWithImage:[self badgeWithNumber:@"33"]];
+    [self.view addSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(27, 17));
+        make.top.equalTo(self.view).offset(90);
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIImage*)badgeWithNumber:(NSString *)numberString
+{
+    CGSize badgeSize=CGSizeMake(27, 17);
+    UIGraphicsBeginImageContextWithOptions(badgeSize, NO, 1);
+    //// Rectangle Drawing
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(0, 0, 27, 17) cornerRadius: 8.5];
+    [Color_White setFill];
+    [rectanglePath fill];
+    
+    NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+    textStyle.alignment = NSTextAlignmentCenter;
+    
+    NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize: 11], NSForegroundColorAttributeName: Color_Main, NSParagraphStyleAttributeName: textStyle};
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGSize textSize = [numberString boundingRectWithSize:CGSizeMake(INFINITY, 15) options:NSStringDrawingUsesLineFragmentOrigin attributes:textFontAttributes context:nil].size;
+    CGContextSaveGState(context);
+    CGRect textRect = CGRectMake((badgeSize.width-textSize.width)/2, (badgeSize.height-badgeSize.height)/2, textSize.width, textSize.height);
+    CGContextClipToRect(context, textRect);
+    [numberString drawInRect: textRect withAttributes: textFontAttributes];
+    CGContextRestoreGState(context);
+    
+    UIImage *testImg =  UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return testImg;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
