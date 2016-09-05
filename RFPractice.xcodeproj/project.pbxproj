@@ -11,6 +11,8 @@
 		C41CCE1D1CEC168900469547 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C41CCE1C1CEC168900469547 /* GCDMulticastDelegate.m */; };
 		C41CCE201CEC16CA00469547 /* RFHomeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C41CCE1F1CEC16CA00469547 /* RFHomeTimer.m */; };
 		C41CCE231CEC1B3500469547 /* RFCountDownTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C41CCE221CEC1B3500469547 /* RFCountDownTableViewCell.m */; };
+		C4F87E351D7D626800F9A139 /* RFProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F87E341D7D626800F9A139 /* RFProgressViewController.m */; };
+		C4F87E381D7D628000F9A139 /* RFProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F87E371D7D628000F9A139 /* RFProgressBar.m */; };
 		E3080D9D1CDF70010083E2F3 /* RFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3080D9C1CDF70010083E2F3 /* RFAlertView.m */; };
 		E31497731CE1DBA80065D6B6 /* RFHomeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E31497721CE1DBA80065D6B6 /* RFHomeSegmentedControl.m */; };
 		E31497791CE2C6C20065D6B6 /* RFTermsAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31497781CE2C6C20065D6B6 /* RFTermsAlertView.m */; };
@@ -58,6 +60,10 @@
 		C41CCE1F1CEC16CA00469547 /* RFHomeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFHomeTimer.m; sourceTree = "<group>"; };
 		C41CCE211CEC1B3500469547 /* RFCountDownTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCountDownTableViewCell.h; sourceTree = "<group>"; };
 		C41CCE221CEC1B3500469547 /* RFCountDownTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCountDownTableViewCell.m; sourceTree = "<group>"; };
+		C4F87E331D7D626800F9A139 /* RFProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFProgressViewController.h; sourceTree = "<group>"; };
+		C4F87E341D7D626800F9A139 /* RFProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFProgressViewController.m; sourceTree = "<group>"; };
+		C4F87E361D7D628000F9A139 /* RFProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFProgressBar.h; sourceTree = "<group>"; };
+		C4F87E371D7D628000F9A139 /* RFProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFProgressBar.m; sourceTree = "<group>"; };
 		E3080D9B1CDF70010083E2F3 /* RFAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAlertView.h; sourceTree = "<group>"; };
 		E3080D9C1CDF70010083E2F3 /* RFAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAlertView.m; sourceTree = "<group>"; };
 		E31497711CE1DBA80065D6B6 /* RFHomeSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFHomeSegmentedControl.h; sourceTree = "<group>"; };
@@ -293,6 +299,10 @@
 				E38C39B51CDEE7A800181A24 /* RFActivityDetailCouponCell.m */,
 				E3080D9B1CDF70010083E2F3 /* RFAlertView.h */,
 				E3080D9C1CDF70010083E2F3 /* RFAlertView.m */,
+				C4F87E331D7D626800F9A139 /* RFProgressViewController.h */,
+				C4F87E341D7D626800F9A139 /* RFProgressViewController.m */,
+				C4F87E361D7D628000F9A139 /* RFProgressBar.h */,
+				C4F87E371D7D628000F9A139 /* RFProgressBar.m */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -413,6 +423,8 @@
 				E315DD8C1CDED55C00433F5C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E38C39B61CDEE7A800181A24 /* RFActivityDetailCouponCell.m in Sources */,
 				E315DD8A1CDED55C00433F5C /* MASViewConstraint.m in Sources */,
+				C4F87E351D7D626800F9A139 /* RFProgressViewController.m in Sources */,
+				C4F87E381D7D628000F9A139 /* RFProgressBar.m in Sources */,
 				E3080D9D1CDF70010083E2F3 /* RFAlertView.m in Sources */,
 				E31497811CE2FF910065D6B6 /* NSString+Size.m in Sources */,
 				E33949361CE80F71007F6471 /* RFDepositOrderDetailViewController.m in Sources */,
