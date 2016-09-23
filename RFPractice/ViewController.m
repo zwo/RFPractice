@@ -14,6 +14,7 @@
 #import "RFDepositOrderDetailViewController.h"
 #import "RFCountdownCellViewController.h"
 #import "RFProgressViewController.h"
+#import "RFNetworkUtility.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
@@ -30,6 +31,10 @@
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
+    }];
+    
+    [[RFNetworkUtility sharedInstance] loginWithPhoneNum:@"13414100910" password:@"123456" completion:^(BOOL success, NSString *message) {
+        
     }];
 }
 
