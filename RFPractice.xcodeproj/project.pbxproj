@@ -18,6 +18,8 @@
 		C45C96FF1D8E387A00550910 /* APContact.m in Sources */ = {isa = PBXBuildFile; fileRef = C45C96F71D8E387A00550910 /* APContact.m */; };
 		C45C97001D8E387A00550910 /* APPhoneWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C45C96F91D8E387A00550910 /* APPhoneWithLabel.m */; };
 		C45C97011D8E387A00550910 /* APSocialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = C45C96FB1D8E387A00550910 /* APSocialProfile.m */; };
+		C4C268CC1D981DA700285B66 /* RFActivityDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C268C91D981DA700285B66 /* RFActivityDrawViewController.m */; };
+		C4C268CD1D981DA700285B66 /* RFDrawActivityPrizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C268CB1D981DA700285B66 /* RFDrawActivityPrizeCell.m */; };
 		C4F87E351D7D626800F9A139 /* RFProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F87E341D7D626800F9A139 /* RFProgressViewController.m */; };
 		C4F87E381D7D628000F9A139 /* RFProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F87E371D7D628000F9A139 /* RFProgressBar.m */; };
 		E3080D9D1CDF70010083E2F3 /* RFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3080D9C1CDF70010083E2F3 /* RFAlertView.m */; };
@@ -82,6 +84,10 @@
 		C45C96FA1D8E387A00550910 /* APSocialProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSocialProfile.h; sourceTree = "<group>"; };
 		C45C96FB1D8E387A00550910 /* APSocialProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSocialProfile.m; sourceTree = "<group>"; };
 		C45C96FC1D8E387A00550910 /* APTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTypes.h; sourceTree = "<group>"; };
+		C4C268C81D981DA700285B66 /* RFActivityDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFActivityDrawViewController.h; sourceTree = "<group>"; };
+		C4C268C91D981DA700285B66 /* RFActivityDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFActivityDrawViewController.m; sourceTree = "<group>"; };
+		C4C268CA1D981DA700285B66 /* RFDrawActivityPrizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDrawActivityPrizeCell.h; sourceTree = "<group>"; };
+		C4C268CB1D981DA700285B66 /* RFDrawActivityPrizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDrawActivityPrizeCell.m; sourceTree = "<group>"; };
 		C4F87E331D7D626800F9A139 /* RFProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFProgressViewController.h; sourceTree = "<group>"; };
 		C4F87E341D7D626800F9A139 /* RFProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFProgressViewController.m; sourceTree = "<group>"; };
 		C4F87E361D7D628000F9A139 /* RFProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFProgressBar.h; sourceTree = "<group>"; };
@@ -190,6 +196,17 @@
 			path = APAddressBook;
 			sourceTree = "<group>";
 		};
+		C4C268C71D981D8900285B66 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				C4C268C81D981DA700285B66 /* RFActivityDrawViewController.h */,
+				C4C268C91D981DA700285B66 /* RFActivityDrawViewController.m */,
+				C4C268CA1D981DA700285B66 /* RFDrawActivityPrizeCell.h */,
+				C4C268CB1D981DA700285B66 /* RFDrawActivityPrizeCell.m */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
 		E314977A1CE2CAB60065D6B6 /* CTCheckbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +246,7 @@
 		E315DD431CDED46500433F5C /* RFPractice */ = {
 			isa = PBXGroup;
 			children = (
+				C4C268C71D981D8900285B66 /* Draw */,
 				E314977E1CE2FF6C0065D6B6 /* Category */,
 				E33949331CE80F3E007F6471 /* Pay */,
 				E3FFB8B11CE0C3FD00A0B0A4 /* Misc */,
@@ -476,6 +494,8 @@
 				C45C97001D8E387A00550910 /* APPhoneWithLabel.m in Sources */,
 				E33949361CE80F71007F6471 /* RFDepositOrderDetailViewController.m in Sources */,
 				E38C39B31CDEDD0000181A24 /* RFActivityDetailViewController.m in Sources */,
+				C4C268CC1D981DA700285B66 /* RFActivityDrawViewController.m in Sources */,
+				C4C268CD1D981DA700285B66 /* RFDrawActivityPrizeCell.m in Sources */,
 				E315DD851CDED55C00433F5C /* MASCompositeConstraint.m in Sources */,
 				E315DD8B1CDED55C00433F5C /* NSArray+MASAdditions.m in Sources */,
 				C45C96FF1D8E387A00550910 /* APContact.m in Sources */,
