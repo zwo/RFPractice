@@ -181,7 +181,7 @@ static CGFloat kLabelHeight=20;
     [btnChat setImage:[UIImage imageNamed:@"draw_btn_chat"] forState:UIControlStateNormal];
     [self.contentView addSubview:btnChat];
     [btnChat mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(btnCall.mas_left).offset(-10);
+        make.right.equalTo(btnCall.mas_left).offset(-15);
         make.size.mas_equalTo(CGSizeMake(24,21));
         make.centerY.equalTo(_avatar);
     }];
@@ -221,7 +221,7 @@ static CGFloat kLabelHeight=20;
     [line mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.contentView);
         make.height.mas_equalTo(1);
-        make.top.equalTo(_labelLuckNumber.mas_bottom).offset(15);
+        make.top.equalTo(_labelLuckNumber.mas_bottom).offset(8);
     }];
 
     UIView *columnBG=[UIView new];
@@ -250,14 +250,14 @@ static CGFloat kLabelHeight=20;
     [self addColumnWithTitle:@"号码" width:40 ratio:589/720.0 container:columnContainer];
 
     //test
-    _avatar.image=[UIImage imageNamed:@"draw_btn_more@"];
+    _avatar.image=[UIImage imageNamed:@"draw_btn_more"];
     _labelName.text=@"廖先生";
     _labelPhone.text=@"13800138000";
     _labelCity.text=@"北京";
-    _labelIdentity.text=@"123124123";
-    _labelNumPeople.text=@"20";
-    _labelEndTime.text=@"2016-12-14 12:55:55";
-    _labelLuckNumber.text=@"234234";
+    _labelIdentity.text=@"身份证号：123124123";
+    _labelNumPeople.text=@"参与人次：20";
+    _labelEndTime.text=@"揭晓时间：2016-12-14 12:55:55";
+    _labelLuckNumber.text=@"幸运号码：234234";
 }
 
 - (void)addColumnWithTitle:(NSString *)title width:(CGFloat)width ratio:(CGFloat)ratio container:(UIView *)container
@@ -373,6 +373,7 @@ static CGFloat kPrizeCellHeight = 45;
     [_buttonFold setImage:[UIImage imageNamed:@"draw_btn_more"] forState:UIControlStateNormal];
     [_buttonFold addTarget:self action:@selector(onButtonFold:) forControlEvents:UIControlEventTouchUpInside]; 
     _buttonFold.frame=CGRectMake(589/720.0*screenWidth,0,40,kPrizeCellHeight);
+    [self.contentView addSubview:_buttonFold];
     
     _labelDate.text=@"2016-08-11";
     _labelTime.text=@"18:18:11";

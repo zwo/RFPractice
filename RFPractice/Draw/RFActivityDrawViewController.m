@@ -118,7 +118,8 @@ static NSString * kPrizeCellDetailID=@"kPrizeCellDetailID";
     */
     UIView *cycleScrollView=[UIView new];
     cycleScrollView.backgroundColor=[UIColor redColor];
-    cycleScrollView.frame=CGRectMake(0, 0, RFSCREEN_W, RFSCREEN_W * 0.6);    
+    cycleScrollView.frame=CGRectMake(0, 0, RFSCREEN_W, RFSCREEN_W * 0.6);
+    [headerView addSubview:cycleScrollView];
     
     
     //活动信息
@@ -156,13 +157,13 @@ static NSString * kPrizeCellDetailID=@"kPrizeCellDetailID";
     [titleView addSubview:costPerPortionLabel];
     [costPerPortionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(Margin_LR);
-        make.top.equalTo(subTitleLab.mas_bottom).offset(12);
+        make.top.equalTo(subTitleLab.mas_bottom).offset(8);
     }];
 
     UILabel *endTime=[UILabel new];
     endTime.font=[UIFont systemFontOfSize:13];
     endTime.textColor=Color_Desc;
-    endTime.text=@"单份金额：￥200";
+    endTime.text=@"时间至2016.9.20";
     [titleView addSubview:endTime];
     [endTime mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(titleView).offset(-Margin_LR);
@@ -174,7 +175,7 @@ static NSString * kPrizeCellDetailID=@"kPrizeCellDetailID";
     [timeIcon mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(12,12));
         make.centerY.equalTo(endTime);
-        make.right.equalTo(endTime.mas_left).offset(3);
+        make.right.equalTo(endTime.mas_left).offset(-3);
     }];
     
     UIView *lineView = [UIView new];
